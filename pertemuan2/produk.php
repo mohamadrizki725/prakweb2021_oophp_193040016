@@ -1,6 +1,7 @@
 <?php
 
 class produk {
+    $judul = "judul",
     $penulis = "penulis",
     $penerbit = "pernebit",
     $harga = 0;
