@@ -1,10 +1,10 @@
 <?php
 
 class produk {
-    $judul = "judul",
-    $penulis = "penulis",
-    $penerbit = "pernebit",
-    $harga = 0;
+   public   $judul = "judul",
+            $penulis = "penulis",
+            $penerbit = "pernebit",
+            $harga = 0;
   public function getLabel()
   {
     return "$this->penulis, $this->penerbit";
