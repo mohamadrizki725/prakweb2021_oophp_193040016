@@ -7,18 +7,18 @@ class Produk
     $penulis,
     $penerbit,
     $harga,
-    $jumlahHalaman,
+    $jmlHalaman,
     $waktuMain,
     $tipe;
 
   // Constructor Method
-  public function __construct($judul = "Judul", $penulis = "Penulis", $penerbit = "Penerbit", $harga = 0, $jumlahHalaman = 0, $waktuMain = 0, $tipe)
+  public function __construct($judul = "Judul", $penulis = "Penulis", $penerbit = "Penerbit", $harga = 0, $jmlHalaman = 0, $waktuMain = 0, $tipe)
   {
     $this->judul = $judul;
     $this->penulis = $penulis;
     $this->penerbit = $penerbit;
     $this->harga = $harga;
-    $this->jumlahHalaman = $jumlahHalaman;
+    $this->jmlHalaman = $jmlHalaman;
     $this->waktuMain = $waktuMain;
     $this->tipe = $tipe;
   }
@@ -32,7 +32,7 @@ class Produk
   {
     $str = "{$this->tipe} : {$this->judul}| {$this->getLabel()} (Rp. {$this->harga})";
     if ($this->tipe == "Komik") {
-      $str .= " - {$this->jumlahHalaman} Halaman.";
+      $str .= " - {$this->jmlHalaman} Halaman.";
     } else if ($this->tipe == "Game") {
       $str .= " ~ {$this->waktuMain} Jam.";
     }
