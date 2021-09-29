@@ -1,10 +1,10 @@
 <?php 
 
 
-Class Controllers {
+Class Controller {
 
 
-	
+
 }
 
- ?>
+ ?> 
